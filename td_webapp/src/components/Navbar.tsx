@@ -11,13 +11,31 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold">MyApp</div>
+        <div className="text-white text-lg font-bold">
+          TheraDiagnostics Logo
+        </div>
         <div className="hidden md:flex space-x-4">
           <Link to="/" className="text-white hover:text-gray-400">
             Home
           </Link>
           <Link to="/about" className="text-white hover:text-gray-400">
             About
+          </Link>
+          <Link
+            // sample url only
+            to="https://www.google.com"
+            target="_blank"
+            className="text-white hover:text-gray-400"
+          >
+            Button 1
+          </Link>
+          <Link
+            // sample url only
+            to="https://www.youtube.com"
+            target="_blank"
+            className="text-white hover:text-gray-400"
+          >
+            Button 2
           </Link>
         </div>
         <div className="md:hidden">
@@ -58,6 +76,24 @@ const Navbar: React.FC = () => {
               onClick={toggleMenu}
             >
               About
+            </Link>
+            <Link
+              // sample url only
+              to="https://www.google.com"
+              target="_blank"
+              className="text-white hover:text-gray-400"
+              onClick={toggleMenu}
+            >
+              Button 1
+            </Link>
+            <Link
+              // sample url only
+              to="https://www.youtube.com"
+              target="_blank"
+              className="text-white hover:text-gray-400"
+              onClick={toggleMenu}
+            >
+              Button 2
             </Link>
           </div>
         </div>
