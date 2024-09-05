@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import TestLogo from "../testlogo.png";
+import TestLogo2 from "../testlogo2.png";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,23 +11,19 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-100 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold">
-          TheraDiagnostics Logo
+        <div className="flex text-white text-lg font-bold">
+          <img src={TestLogo} alt="" height={40} width={40} />
+          <img src={TestLogo2} alt="" height={40} width={500} />
         </div>
         <div className="hidden md:flex space-x-4">
-          <Link to="/" className="text-white hover:text-gray-400">
-            Home
-          </Link>
-          <Link to="/about" className="text-white hover:text-gray-400">
-            About
-          </Link>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
           <Link
             // sample url only
             to="https://www.google.com"
             target="_blank"
-            className="text-white hover:text-gray-400"
           >
             Button 1
           </Link>
@@ -33,16 +31,12 @@ const Navbar: React.FC = () => {
             // sample url only
             to="https://www.youtube.com"
             target="_blank"
-            className="text-white hover:text-gray-400"
           >
             Button 2
           </Link>
         </div>
         <div className="md:hidden">
-          <button
-            onClick={toggleMenu}
-            className="text-white focus:outline-none"
-          >
+          <button onClick={toggleMenu} className="focus:outline-none">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -63,25 +57,16 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="flex flex-col space-y-2 mt-2">
-            <Link
-              to="/"
-              className="text-white hover:text-gray-400"
-              onClick={toggleMenu}
-            >
+            <Link to="/" onClick={toggleMenu}>
               Home
             </Link>
-            <Link
-              to="/about"
-              className="text-white hover:text-gray-400"
-              onClick={toggleMenu}
-            >
+            <Link to="/about" onClick={toggleMenu}>
               About
             </Link>
             <Link
               // sample url only
               to="https://www.google.com"
               target="_blank"
-              className="text-white hover:text-gray-400"
               onClick={toggleMenu}
             >
               Button 1
@@ -90,7 +75,6 @@ const Navbar: React.FC = () => {
               // sample url only
               to="https://www.youtube.com"
               target="_blank"
-              className="text-white hover:text-gray-400"
               onClick={toggleMenu}
             >
               Button 2
