@@ -13,9 +13,9 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-gray-100 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex text-white text-lg font-bold">
-          <img src={TestLogo} alt="" height={40} width={40} />
-          <img src={TestLogo2} alt="" height={40} width={500} />
+        <div className="flex">
+          <img src={TestLogo} alt="" height={32} width={30} />
+          <img src={TestLogo2} alt="" height={41} width={300} />
         </div>
         <div className="hidden md:flex space-x-4">
           <Link to="/">Home</Link>
