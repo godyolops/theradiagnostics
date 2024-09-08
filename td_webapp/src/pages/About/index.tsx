@@ -1,5 +1,8 @@
 import React from "react";
 
+// component
+import SpecialistComponent from "../../components/SpecialistComponent";
+
 // image
 import BannerBg from "../../assets/home/banner-bg.jpg";
 import AboutUsDoctor from "../../assets/about/aboutus-doctor.png";
@@ -26,10 +29,10 @@ const About: React.FC = () => {
       </div>
       <div className="w-full">
         <div className="container mx-auto flex row-auto items-center max-w-6xl px-3 pb-32 pt-16">
-          <div className="z-50">
-            <img src={AboutUsDoctor} alt="" className="z-50" />
+          <div className="z-10">
+            <img src={AboutUsDoctor} alt="" className="z-50"/>
           </div>
-          <div className="z-40 p-28 -ml-10 border-8 border-gray-100">
+          <div className="p-28 -ml-10 border-8 border-gray-100">
             <div className="text-4xl font-bold mb-2 text-gray-800">
               Welcome to our clinic
             </div>
@@ -48,6 +51,16 @@ const About: React.FC = () => {
               LEARN MORE
             </button>
           </div>
+        </div>
+      </div>
+      <div className="w-full mb-28">
+        <div className="my-10 flex flex-col items-center justify-center">
+          <div className="mb-40 text-6xl font-medium">
+            Our Specialist
+          </div>
+          <SpecialistComponent doctor="doctor1"/>
+          <SpecialistComponent doctor="doctor2"/>
+          <SpecialistComponent doctor="doctor1"/>
         </div>
       </div>
     </div>
