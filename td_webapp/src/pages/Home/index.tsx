@@ -6,11 +6,10 @@ import BannerBg from "../../assets/home/banner-bg.jpg";
 const Home: React.FC = () => {
   return (
     <div className="w-full h-full">
-      <div className="relative w-full h-[731px] top-14 mb-14">
-        <div className="absolute w-full h-full">
-          <div className="relative w-full h-screen overflow-hidden">
-            <img src={BannerBg} alt="" className="absolute inset-0 w-full h-full object-cover scale-125 z-0"/>
-            <div className="z-10 absolute top-2/4 w-full">
+      <div className="relative w-full items-start top-14 mb-14">
+        <div className="relative w-full overflow-hidden">
+            <img src={BannerBg} alt="" className="inset-0 w-full object-cover max-h-96 h-96 scale-105 z-0"/>
+            <div className="z-10 absolute top-1/4 w-full">
               <div className="container mx-auto max-w-6xl px-3">
                 <div className="text-base font-sans font-normal mb-2">Caring for better life</div>
                 <div className="text-5xl font-bold mb-2 text-gray-800">Leading the way in <br /> medical excellence</div>
@@ -19,7 +18,6 @@ const Home: React.FC = () => {
                   BUY NOW!
                 </button>
               </div>
-          </div>
           </div>
         </div>
       </div>
