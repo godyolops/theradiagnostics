@@ -39,13 +39,13 @@ const Header: React.FC = () => {
         <div className="hidden md:flex space-x-4">
           <Link
             to="/"
-            className="text-xs font-sans font-medium text-slate-700 py-1.5 px-2.5"
+            className="text-xs font-bold text-slate-700 py-1.5 px-2.5"
           >
             HOME
           </Link>
           <Link
             to="/about"
-            className="text-xs font-sans font-medium text-slate-700 py-1.5 px-2.5"
+            className="text-xs font-bold text-slate-700 py-1.5 px-2.5"
           >
             ABOUT
           </Link>

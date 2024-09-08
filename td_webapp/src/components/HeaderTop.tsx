@@ -23,7 +23,7 @@ const HeaderTop: React.FC = () => {
               <div>
                 <FontAwesomeIcon icon={faMobileScreenButton} />
               </div>
-              <div className="text-xs font-sans font-medium">
+              <div className="text-xs font-medium">
                 CALL US NOW! +639123456789
               </div>
             </div>
@@ -31,7 +31,7 @@ const HeaderTop: React.FC = () => {
               <div>
                 <FontAwesomeIcon icon={faEnvelope} />
               </div>
-              <div className="text-xs font-sans font-medium">
+              <div className="text-xs font-medium">
                 theradiagnostics@gmail.com
               </div>
             </div>
@@ -39,9 +39,7 @@ const HeaderTop: React.FC = () => {
               <div>
                 <FontAwesomeIcon icon={faLocationDot} />
               </div>
-              <div className="text-xs font-sans font-medium">
-                FIND OUR LOCATION
-              </div>
+              <div className="text-xs font-medium">FIND OUR LOCATION</div>
             </div>
           </div>
           <div className="flex gap-x-3">
