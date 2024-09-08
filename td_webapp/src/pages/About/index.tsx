@@ -7,7 +7,7 @@ import AboutUsDoctor from "../../assets/about/aboutus-doctor.png";
 const About: React.FC = () => {
   return (
     <div className="w-full h-full">
-      <div className="relative w-full max-h-96 h-96 -top-14">
+      <div className="relative w-full max-h-96 h-96 top-14">
         <div className="absolute w-full max-h-screen">
             <div className="relative w-full h-screen overflow-hidden">
               <img src={BannerBg} alt="" className="absolute inset-0 w-full h-2/4 object-cover scale-105 z-0"/>

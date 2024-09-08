@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     };
 
     return (
-        <div className="w-full sticky z-50 my-3.5 bg-transparent">
+        <div className="w-full sticky top-10 z-50 my-3.5 bg-transparent">
             <div className="container mx-auto flex justify-between items-center max-w-6xl px-3">
                 <div className="flex">
                 <img src={LogoImg} alt="" height={32} width={30} />

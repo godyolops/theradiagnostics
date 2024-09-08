@@ -6,7 +6,7 @@ import BannerBg from "../../assets/home/banner-bg.jpg";
 const Home: React.FC = () => {
   return (
     <div className="w-full h-full">
-      <div className="relative w-full h-[675px] -top-14">
+      <div className="relative w-full h-[731px] top-14 mb-14">
         <div className="absolute w-full h-full">
           <div className="relative w-full h-screen overflow-hidden">
             <img src={BannerBg} alt="" className="absolute inset-0 w-full h-full object-cover scale-125 z-0"/>

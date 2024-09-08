@@ -8,7 +8,7 @@ import twitterIcon from "../assets/navbar-top/twitter-icon.png";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-gray-900 max-h-64 h-20 place-content-center">
+        <footer className="bg-gray-900 max-h-64 h-20 place-content-center z-50">
             <div className="container mx-auto max-w-6xl px-3 flex justify-between">
                 <div className="text-white place-content-center">
                     Copyright ©2024 All rights reserved | This template is made with  by Colorlib
