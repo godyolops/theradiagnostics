@@ -8,10 +8,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"; // Outlined version
-import {
-  faLocationDot,
-  faMobileScreenButton,
-} from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const HeaderTop: React.FC = () => {
   return (
@@ -21,11 +18,9 @@ const HeaderTop: React.FC = () => {
           <div className="flex gap-x-3">
             <div className="flex justify-center items-center gap-x-2 text-slate-500">
               <div>
-                <FontAwesomeIcon icon={faMobileScreenButton} />
+                <FontAwesomeIcon icon={faPhone} />
               </div>
-              <div className="text-xs font-medium">
-                CALL US NOW! +639123456789
-              </div>
+              <div className="text-xs font-medium">(088) 565 9541</div>
             </div>
             <div className="flex justify-center items-center gap-x-2 text-slate-500">
               <div>

@@ -4,8 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 // image
-import LogoImg from "../assets/navbar/logo-img.png";
-import LogoName from "../assets/navbar/logo-name.png";
+import LogoImg from "../assets/navbar/mainlogo.png";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,8 +32,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto flex justify-between items-center max-w-6xl px-3">
         <div className="flex">
-          <img src={LogoImg} alt="" height={32} width={30} />
-          <img src={LogoName} alt="" height={41} width={250} />
+          <img src={LogoImg} alt="" height={55} width={228} />
         </div>
         <div className="hidden md:flex space-x-4">
           <Link
