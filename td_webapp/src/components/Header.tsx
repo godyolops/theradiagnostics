@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 // router
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // image
 import LogoImg from "../assets/navbar/mainlogo.png";
@@ -9,6 +9,7 @@ import LogoImg from "../assets/navbar/mainlogo.png";
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation(); // Get the current location
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -24,6 +25,11 @@ const Header: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  // Function to check if the link is active
+  const isActive = (path: string) => {
+    return location.pathname === path ? "activeLinkBorder" : ""; // Add active class
+  };
+
   return (
     <div
       className={`w-full sticky top-0 z-50 py-3.5 bg-transparent transform transition-all duration-700 ease-in-out ${
@@ -37,13 +43,17 @@ const Header: React.FC = () => {
         <div className="hidden md:flex space-x-4">
           <Link
             to="/"
-            className="text-xs font-bold text-slate-700 py-1.5 px-2.5"
+            className={`text-xs font-bold text-slate-700 py-1.5 px-2.5 ${isActive(
+              "/"
+            )}`}
           >
             HOME
           </Link>
           <Link
             to="/about"
-            className="text-xs font-bold text-slate-700 py-1.5 px-2.5"
+            className={`text-xs font-bold text-slate-700 py-1.5 px-2.5 ${isActive(
+              "/about"
+            )}`}
           >
             ABOUT
           </Link>
