@@ -7,8 +7,8 @@ import ProfilesSection from "../../common/Profiles/ProfilesSection";
 
 const Home: React.FC = () => {
   return (
-    <div className="w-full h-full">
-      <div className="relative w-full items-start top-14 mb-14">
+    <div className="w-full h-full -mt-[83px]">
+      <div className="relative w-full mb-14">
         <div className="relative w-full overflow-hidden">
           <img
             src={BannerBg}

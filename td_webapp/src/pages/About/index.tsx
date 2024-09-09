@@ -11,8 +11,8 @@ import doctor2 from "../../assets/about/doctor2.png";
 
 const About: React.FC = () => {
   return (
-    <div className="w-full h-full">
-      <div className="relative w-full top-14 items-start mb-14">
+    <div className="w-full h-full -mt-[83px]">
+      <div className="relative w-full mb-14">
         <div className="relative w-full overflow-hidden">
           <img
             src={BannerBg}
