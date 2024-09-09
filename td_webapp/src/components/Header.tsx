@@ -32,8 +32,8 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className={`w-full sticky top-0 z-50 py-3.5 bg-transparent transform transition-all duration-700 ease-in-out ${
-        scrolled ? "bg-[#F9F9FD] shadow-md" : ""
+      className={`w-full sticky top-0 z-50 py-3.5 transform transition-all duration-700 ease-in-out ${
+        scrolled ? "bg-[#F9F9FD] shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center max-w-6xl px-3">
