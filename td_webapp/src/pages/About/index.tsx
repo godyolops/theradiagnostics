@@ -1,11 +1,13 @@
 import React from "react";
 
 // component
-import SpecialistComponent from "../../common/Specialist/SpecialistComponent";
+import TestimonySection from "../../common/Testimony/TestimonySection";
 
 // image
 import BannerBg from "../../assets/home/banner-bg.jpg";
 import AboutUsDoctor from "../../assets/about/aboutus-doctor.png";
+import doctor1 from "../../assets/about/doctor1.png";
+import doctor2 from "../../assets/about/doctor2.png";
 
 const About: React.FC = () => {
   return (
@@ -28,7 +30,7 @@ const About: React.FC = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="container mx-auto flex row-auto items-center max-w-6xl px-3 py-24">
+        <div className="container mx-auto flex row-auto items-center max-w-6xl px-3 py-14">
           <div className="z-10">
             <img src={AboutUsDoctor} alt="" className="z-50" />
           </div>
@@ -54,11 +56,22 @@ const About: React.FC = () => {
         </div>
       </div>
       <div className="w-full mb-28">
-        <div className="flex flex-col items-center justify-center">
-          <div className="mb-20 text-6xl font-medium">Our Specialist</div>
-          <SpecialistComponent doctor="doctor1" />
-          <SpecialistComponent doctor="doctor2" />
-          <SpecialistComponent doctor="doctor1" />
+        <div className="flex flex-col items-center justify-center py-14">
+          <div className="text-6xl font-medium">Patient are saying</div>
+          <div className="flex gap-8 justify-between">
+            <TestimonySection
+              name="Adrian"
+              role="Developer"
+              imageUrl={doctor1}
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            />
+            <TestimonySection
+              name="Poloy"
+              role="Developer"
+              imageUrl={doctor2}
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import React from "react";
 // image
 import BannerBg from "../../assets/home/banner-bg.jpg";
 import ServicesSection from "../../common/Services/ServicesSection";
+import ProfilesSection from "../../common/Profiles/ProfilesSection";
 
 const Home: React.FC = () => {
   return (
@@ -38,8 +39,18 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div>
-        <ServicesSection />
+      <div className="flex flex-col items-center justify-center py-14">
+        <div className="text-6xl font-medium pb-14">Services</div>
+        <div className="flex gap-4 justify-between">
+          <ServicesSection />
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center py-14">
+        <div className="text-6xl font-medium pb-14">Company Profile</div>
+        <div className="flex gap-4 justify-between">
+          <ProfilesSection />
+        </div>
       </div>
     </div>
   );

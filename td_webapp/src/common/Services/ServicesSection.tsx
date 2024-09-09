@@ -10,7 +10,7 @@ import React from "react";
 
 const TechnologySection = () => {
   return (
-    <div className="container mx-auto flex justify-between items-center max-w-6xl px-3 py-14">
+    <div className="container mx-auto flex justify-between items-center max-w-6xl px-3">
       <div className="flex justify-between gap-x-4">
         <ServiceCard
           title="ADVANCE TECHNOLOGY"
