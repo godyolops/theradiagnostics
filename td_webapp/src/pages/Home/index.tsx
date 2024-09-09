@@ -26,7 +26,12 @@ const Home: React.FC = () => {
                 Earth greater grass for good. Place for divide evening yielding{" "}
                 <br /> them that. Creeping beginning over gathered brought.
               </div>
-              <button className="tracking-widest bg-gradient-to-r from-blue-500 to-green-500 text-white mt-4 text-sm py-3 px-8 font-bold">
+              <button
+                onClick={() =>
+                  window.open("https://forms.gle/FzqSrYHrNs8JgvQP6")
+                }
+                className="tracking-widest bg-gradient-to-r from-blue-500 to-green-500 text-white mt-4 text-sm py-3 px-8 font-bold"
+              >
                 Be a Member
               </button>
             </div>
