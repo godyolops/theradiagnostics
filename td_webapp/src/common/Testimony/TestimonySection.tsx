@@ -14,7 +14,7 @@ const TestimonySection: React.FC<TestimonySectionProps> = ({
   description,
 }: TestimonySectionProps) => {
   return (
-    <div className="mb-6 mt-[90px] pt-10 pr-20 pb-5 pl-10 bg-gray-50 items-start w-[500px]">
+    <div className="mb-6 mt-[90px] pt-10 pr-20 pb-5 pl-10 bg-gray-50 items-start w-[500px] border border-gray-200 rounded-lg shadow-xs hover:shadow-md">
       <img src={imageUrl} alt="" className="mb-6 -mt-[90px]" />
       <div className="font-semibold text-lg mb-2">{name}</div>
       <div className="mb-2 text-sm font-normal text-gray-500">{role}</div>
