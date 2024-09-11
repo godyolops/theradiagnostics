@@ -23,10 +23,7 @@ const Home: React.FC = () => {
               <div className="text-5xl font-bold mb-2 text-gray-800">
                 Leading the way in <br /> medical excellence
               </div>
-              <div className="text-slate-500 mb-4">
-                Earth greater grass for good. Place for divide evening yielding{" "}
-                <br /> them that. Creeping beginning over gathered brought.
-              </div>
+              <div className="text-slate-500 mb-4"></div>
               <button
                 onClick={() =>
                   window.open("https://forms.gle/FzqSrYHrNs8JgvQP6")

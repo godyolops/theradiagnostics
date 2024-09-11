@@ -25,7 +25,7 @@ const ProfileCard = ({
   imageUrl,
 }: ProfileCardProps) => {
   return (
-    <div className="group w-1/4 min-h-[320px] bg-white border border-gray-200 rounded-lg shadow-xs hover:shadow-md overflow-hidden text-center flex flex-col">
+    <div className="group w-1/4 min-w-[240px] min-h-[280px] bg-white border border-gray-200 rounded-lg shadow-xs hover:shadow-md overflow-hidden text-center flex flex-col">
       {imageUrl && (
         <img
           src={imageUrl}
@@ -35,12 +35,10 @@ const ProfileCard = ({
       )}
       <div className="flex-grow">
         <div className="group-hover:bg-gradient-to-r from-blue-500 to-green-500 p-4 bg-[#F9F9FD]">
-          <div className="font-bold text-md">{name}</div>
-          <div className="font-bold text-slate-500 text-sm">{role}</div>
+          <div className="font-bold text-sm whitespace-nowrap">{name}</div>
+          <div className="font-bold text-slate-500 text-xs">{role}</div>
         </div>
-        <div className="text-slate-500 text-sm line-clamp-4 p-4">
-          {description}
-        </div>
+        <div className="text-slate-500 text-sm line-clamp-4 p-4"></div>
         <div className="flex gap-4 justify-center p-4">
           <div>
             <FontAwesomeIcon
