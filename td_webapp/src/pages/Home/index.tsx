@@ -43,12 +43,12 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center py-14">
+      {/* <div className="flex flex-col items-center justify-center py-14">
         <div className="text-6xl font-medium pb-14">Company Profile</div>
         <div className="flex gap-4 justify-between">
           <ProfilesSection />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
