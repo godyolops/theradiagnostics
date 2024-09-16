@@ -3,7 +3,6 @@ import React from "react";
 // image
 import BannerBg from "../../assets/home/banner-bg.jpg";
 import ServicesSection from "../../common/Services/ServicesSection";
-import ProfilesSection from "../../common/Profiles/ProfilesSection";
 
 const Home: React.FC = () => {
   return (
