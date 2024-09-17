@@ -55,7 +55,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="w-full mb-28">
+      {/* <div className="w-full mb-28">
         <div className="flex flex-col items-center justify-center py-14">
           <div className="text-6xl font-medium">Patient are saying</div>
           <div className="flex gap-8 justify-between">
@@ -73,7 +73,7 @@ const About: React.FC = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
