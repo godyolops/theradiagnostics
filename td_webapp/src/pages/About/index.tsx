@@ -1,13 +1,10 @@
 import React from "react";
 
 // component
-import TestimonySection from "../../common/Testimony/TestimonySection";
 
 // image
 import BannerBg from "../../assets/home/banner-bg.jpg";
 import AboutUsDoctor from "../../assets/about/aboutus-doctor.png";
-import doctor1 from "../../assets/about/doctor1.png";
-import doctor2 from "../../assets/about/doctor2.png";
 
 const About: React.FC = () => {
   return (
